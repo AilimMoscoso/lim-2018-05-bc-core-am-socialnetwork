@@ -1,0 +1,6 @@
+describe('validation', () => {
+
+    it ('deberia',()=>{
+        
+    })
+})

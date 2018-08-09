@@ -2,6 +2,12 @@
 html, body{
   height: 100%;
 }
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
 .back-img{
   background-image:url("https://image.ibb.co/ct1Wio/fondo_log.png");
   background-repeat: no-repeat;
@@ -16,6 +22,11 @@ form .input-field label,form .input-field input{
   font-weight: lighter;
   letter-spacing: 0.08em;
   font-size: 16px;
+}
+label.error{
+  color:red;
+  font-size:8px;
+  padding-top: 45px;
 }
 .btn-style{
   color: #1a140d;
@@ -118,11 +129,13 @@ nav i.material-icons, nav i{
 }
 .tabs .indicator {
   background: #392613;
+
 } 
 .tabs .tab a:focus, .tabs .tab a:focus.active{
   background: rgb(238, 142, 32);
-  color: black
+  color: black;
 }
+
 .error-label{
   display: none;
 }
@@ -146,7 +159,7 @@ textarea.materialize-textarea {
 select{
   background-color: transparent;
   width: 100px;
-  border: 0px
+  border: 0px;
 }
 .user-name-post {
   margin-bottom: 15px;
@@ -159,7 +172,7 @@ color: #1a140d
 }
 .post-user{
   background-color: white;
-  height: 80px;
+  height: 130px;
 }
 .post-options a{
   margin-right: 5px;
@@ -174,12 +187,8 @@ color: #1a140d
   background-repeat: no-repeat;
   background-size: 100%;  
 }
-
-.button-link{
+.button-link,.button-link2 {
   cursor: pointer;
-}
-.button-link{
-  cursor: pointer
 }
 @media screen and (min-width:600px){
 .back-img{
@@ -200,7 +209,7 @@ color: #1a140d
   min-height:100vh !important;
 }
 .row{
-  margin-bottom: 0px
+  margin-bottom: 0px;
 } 
  .texto{
    float: right;
@@ -211,7 +220,6 @@ color: #1a140d
    font-weight: bold;
    opacity: 0.6;
    border-radius: 15%;
-   /* padding: 0.2em 0.2em; */
    text-align: center;
    margin-top: 540px;
    margin-right: 270px;
@@ -232,7 +240,7 @@ form .input-field label.white-text,form .input-field input.white-text, form p.wh
   margin-top:5%;
  }
 .logo{
- width: 17%
+ width: 17%;
  }
 }
 @media screen and (min-width:600px){
